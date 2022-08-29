@@ -5,7 +5,7 @@
 ![alt text](https://github.com/epochlab/autograd/blob/main/sample.png)
 
 #### Implementing backpropagation in a simple deep learning framwork.
-Abstract: *Inspired by Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd). Autograd is a deep learning framework written from scratch. *
+Abstract: *Autograd is a deep learning framework written from scratch.*
 
 `autograd.engine` module implements a scalar valued autograd engine, which tracks values, their gradients,
 and the executed operations (and the resulting new values) in the form of a DAG (directed acyclical graph).
