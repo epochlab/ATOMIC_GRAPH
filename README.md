@@ -9,7 +9,7 @@
 #### A simple deep learning framwork.
 Abstract: *A scalar-valued autograd engine which tracks values, gradients and executed operations over a dynamically built DAG (directed acyclical graph).*
 
-Inspired by Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd)
+Inspired by Andrej Karpathy's 
 
 ### Example
 
@@ -37,3 +37,7 @@ print(f'{b.grad:.4f}') # prints 645.5773, i.e. the numerical value of dg/db
 ### Requirements
 - Both Linux and Windows are supported. Linux is recommended for performance and compatibility reasons.
 - 64-bit Python 3.7.9 installation.
+
+### Acknowledgments
+[micrograd](https://github.com/karpathy/micrograd) (2020)<br />
+[tinygrad](https://github.com/geohot/tinygrad) (2022)
