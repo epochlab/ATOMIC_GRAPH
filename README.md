@@ -7,10 +7,10 @@
 #### Implementing backpropagation in a simple deep learning framwork.
 Abstract: *Autograd is a deep learning framework written from scratch, inspired by Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd).*
 
-`autograd.engine` module implements a scalar valued autograd engine, which tracks values, their gradients,
-and the executed operations (and the resulting new values) in the form of a DAG (directed acyclical graph).
+`autograd.engine` implements a scalar-valued autograd engine, which tracks values, gradients,
+and the executed operations over a dynamically built DAG (directed acyclical graph).
 
-In this DAG the leaves are the input values and the roots are the outputs of the computational graph. 
+In this DAG, the leaves are the input values and the roots are the outputs of the computational graph. 
 
 By tracing this graph from root to leaves, you can calculate the gradient of each node by using the [chain rule](https://en.wikipedia.org/wiki/Chain_rule).
 
