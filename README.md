@@ -18,7 +18,7 @@ By tracing this graph from root to leaves, you can calculate the gradient of eac
 
 This is called backpropagation, or more formally, [reverse-mode automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation#Reverse_accumulation).
 
---------------------------------------------------------------------
+### Example
 
 ```python
 from autograd.engine import Value
@@ -40,8 +40,6 @@ g.backward()
 print(f'{a.grad:.4f}') # prints 138.8338, i.e. the numerical value of dg/da
 print(f'{b.grad:.4f}') # prints 645.5773, i.e. the numerical value of dg/db
 ```
-
---------------------------------------------------------------------
 
 ### Requirements
 - Both Linux and Windows are supported. Linux is recommended for performance and compatibility reasons.
