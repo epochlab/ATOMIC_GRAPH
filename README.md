@@ -7,7 +7,7 @@
 --------------------------------------------------------------------
 
 #### Implementing backpropagation in a simple deep learning framwork.
-Abstract: *Implements a scalar-valued autograd engine which tracks values, gradients and executed operations over a dynamically built DAG (directed acyclical graph).*
+Abstract: *A scalar-valued autograd engine which tracks values, gradients and executed operations over a dynamically built DAG (directed acyclical graph).*
 
 ### Example
 
