@@ -4,6 +4,8 @@
 
 ![alt text](https://github.com/epochlab/autograd/blob/main/sample.png)
 
+--------------------------------------------------------------------
+
 #### Implementing backpropagation in a simple deep learning framwork.
 Abstract: *Autograd is a deep learning framework written from scratch, inspired by Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd).*
 
@@ -15,6 +17,8 @@ In this DAG, the leaves are the input values and the roots are the outputs of th
 By tracing this graph from root to leaves, you can calculate the gradient of each node by using the [chain rule](https://en.wikipedia.org/wiki/Chain_rule).
 
 This is called backpropagation, or more formally, [reverse-mode automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation#Reverse_accumulation).
+
+--------------------------------------------------------------------
 
 ```python
 from autograd.engine import Value
@@ -36,6 +40,8 @@ g.backward()
 print(f'{a.grad:.4f}') # prints 138.8338, i.e. the numerical value of dg/da
 print(f'{b.grad:.4f}') # prints 645.5773, i.e. the numerical value of dg/db
 ```
+
+--------------------------------------------------------------------
 
 ### Requirements
 - Both Linux and Windows are supported. Linux is recommended for performance and compatibility reasons.
