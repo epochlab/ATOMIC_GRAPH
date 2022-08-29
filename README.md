@@ -6,7 +6,7 @@
 
 --------------------------------------------------------------------
 
-#### Implementing backpropagation in a simple deep learning framwork.
+#### A simple deep learning framwork.
 Abstract: *A scalar-valued autograd engine which tracks values, gradients and executed operations over a dynamically built DAG (directed acyclical graph).*
 
 ### Example
