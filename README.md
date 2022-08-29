@@ -9,6 +9,8 @@
 #### A simple deep learning framwork.
 Abstract: *A scalar-valued autograd engine which tracks values, gradients and executed operations over a dynamically built DAG (directed acyclical graph).*
 
+Inspired by Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd)
+
 ### Example
 
 ```python
