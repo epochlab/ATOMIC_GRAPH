@@ -118,9 +118,6 @@ class Value:
 
         return out
 
-    def shape(self):
-        return self.data.shape
-
     def backward(self):
         topo = []
         visited = set()
@@ -156,3 +153,6 @@ class Value:
 
     def __repr__(self):
         return f"Value(data={self.data})"
+
+    def shape(self):
+        return self.data.shape
