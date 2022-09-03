@@ -76,7 +76,7 @@ class Value:
         return out
 
     def reduce_sum(self, axis=None):
-        out = Value(np.sum(self.data, axis=axis), (self,), 'REDUCE_SUM')
+        out = Value(np.sum(self.data, axis=axis), (self,), 'reduce_sum')
         
         def _backward():
             output_shape = np.array(self.data.shape)
