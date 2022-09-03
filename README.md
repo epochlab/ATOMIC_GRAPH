@@ -20,8 +20,8 @@ c = a + b
 d = a * b + b**3
 c += c + 1
 c += 1 + c + (-a)
-d += d * 2 + (b + a).tanh()
-d += 3 * d + (b - a).tanh()
+d += d * 2 + (b + a).relu()
+d += 3 * d + (b - a).relu()
 e = c - d
 f = e**2
 g = f / 2.0
@@ -37,5 +37,5 @@ print(f'{b.grad:.4f}') # prints 645.5773, i.e. the numerical value of dg/db
 - 64-bit Python 3.7.9 installation.
 
 ### Acknowledgments
-[micrograd](https://github.com/karpathy/micrograd) (2020)<br />
-[tinygrad](https://github.com/geohot/tinygrad) (2022)
+[Micrograd](https://github.com/karpathy/micrograd) (2020)<br />
+[Tinygrad](https://github.com/geohot/tinygrad) (2022)
