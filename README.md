@@ -2,7 +2,9 @@
 
 **Project ID:**  U8bTnBck
 
-![alt text](https://github.com/epochlab/autograd/blob/main/sample.png)
+<p align="center">
+  <img src="https://github.com/epochlab/autograd/blob/main/sample.png">
+</p>
 
 --------------------------------------------------------------------
 
@@ -14,23 +16,23 @@ Abstract: *A scalar-valued autograd engine which tracks values, gradients and ex
 ```python
 from autograd.engine import Value
 
-a = Value(-4.0)
-b = Value(2.0)
-c = a + b
-d = a * b + b**3
-c += c + 1
-c += 1 + c + (-a)
-d += d * 2 + (b + a).relu()
-d += 3 * d + (b - a).relu()
-e = c - d
-f = e**2
-g = f / 2.0
-g += 10.0 / f
-print(f'{g.data:.4f}') # prints 24.7041, the outcome of this forward pass
-g.backward()
-print(f'{a.grad:.4f}') # prints 138.8338, i.e. the numerical value of dg/da
-print(f'{b.grad:.4f}') # prints 645.5773, i.e. the numerical value of dg/db
+a = Value(2.0, label='a')
+b = Value(-3.0, label='b')
+c = Value(10.0, label='c')
+d = a * b; d.label='d'
+e = d + c; e.label='e'
+f = Value(-2.0, label='f')
+L = e * f; L.label='L'
+
+print(f'{L.data:.4f}') # prints -8.0, the outcome of this forward pass
+L.backward()
+print(f'{a.grad:.4f}') # prints 6.0, i.e. the numerical value of dg/da
+print(f'{b.grad:.4f}') # prints -4.0, i.e. the numerical value of dg/db
 ```
+
+<p align="center">
+  <img src="https://github.com/epochlab/autograd/blob/main/sample.png">
+</p>
 
 ### Requirements
 - Both Linux and Windows are supported. Linux is recommended for performance and compatibility reasons.
