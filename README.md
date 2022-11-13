@@ -31,7 +31,7 @@ print(f'{b.grad:.4f}') # prints -4.0, i.e. the numerical value of dg/db
 ```
 
 <p align="left">
-  <img src="https://github.com/epochlab/atomic_graph/blob/main/output.png">
+  <img src="https://github.com/epochlab/atomic_graph/blob/main/node_graph.png">
 </p>
 
 ### Requirements
