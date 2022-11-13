@@ -30,7 +30,7 @@ print(f'{a.grad:.4f}') # prints 6.0, i.e. the numerical value of dg/da
 print(f'{b.grad:.4f}') # prints -4.0, i.e. the numerical value of dg/db
 ```
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/epochlab/atomic_graph/blob/main/node_graph.png">
 </p>
 
