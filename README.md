@@ -14,7 +14,7 @@ Abstract: *A scalar-valued autograd engine which tracks values, gradients and ex
 ### Example
 
 ```python
-from autograd.engine import Value
+from atomic_graph.engine import Value
 
 a = Value(2.0, label='a')
 b = Value(-3.0, label='b')
