@@ -30,10 +30,6 @@ print(f'{a.grad:.4f}') # prints 6.0, i.e. the numerical value of dg/da
 print(f'{b.grad:.4f}') # prints -4.0, i.e. the numerical value of dg/db
 ```
 
-<p align="center">
-  <img src="https://github.com/epochlab/atomic_graph/blob/main/node_graph.png">
-</p>
-
 ### Requirements
 - Both Linux and Windows are supported. Linux is recommended for performance and compatibility reasons.
 - 64-bit Python 3.7.9 installation.
