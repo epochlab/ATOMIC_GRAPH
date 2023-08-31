@@ -3,7 +3,7 @@
 **Project ID:**  U8bTnBck
 
 <p align="center">
-  <img src="https://github.com/epochlab/atomic_graph/blob/main/sample.png">
+  <img src="https://github.com/epochlab/ATOMIC_GRAPH/blob/main/sample.png">
 </p>
 
 --------------------------------------------------------------------
